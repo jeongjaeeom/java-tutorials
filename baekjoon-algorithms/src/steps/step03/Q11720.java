@@ -1,4 +1,4 @@
-package qfor;
+package steps.step03;
 
 import java.util.Scanner;
 
