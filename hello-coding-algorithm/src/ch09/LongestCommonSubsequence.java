@@ -44,7 +44,6 @@ public class LongestCommonSubsequence {
     // [0, 1, 1, 1]
     // [0, 1, 2, 2]
     // [0, 1, 2, 3]
-
   }
 
   private static void printResult(int[][] arr) {
