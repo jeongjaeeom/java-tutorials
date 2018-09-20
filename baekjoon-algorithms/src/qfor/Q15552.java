@@ -9,7 +9,7 @@ public class Q15552 {
 
   public static void main(String[] args) {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); // StringBuilder를 사용해도 된다.
     try {
       int n = Integer.parseInt(br.readLine());
       for (int i = 0; i < n; i++) {
