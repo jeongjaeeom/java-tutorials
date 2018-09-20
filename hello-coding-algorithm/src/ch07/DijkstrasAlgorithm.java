@@ -80,5 +80,6 @@ public class DijkstrasAlgorithm {
 
     System.out.println("Cost from the start to each node:");
     System.out.println(costs); // { a: 5, b: 2, fin: 6 }
+    System.out.println(parents);
   }
 }
