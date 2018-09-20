@@ -54,7 +54,7 @@ public class DijkstrasAlgorithm {
     parents.put("b", "start");
     parents.put("fin", null);
 
-    String node = findLowestCostNode(costs);
+    String node = findLowestCostNode(costs); 
     while (node != null) {
       Double cost = costs.get(node);
       // Go through all the neighbors of this node
