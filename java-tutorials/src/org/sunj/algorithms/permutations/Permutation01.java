@@ -50,11 +50,9 @@ public class Permutation01 {
   }
 
   public static void main(String[] args) {
-    int r = 2;
+    int r = 3;
     int[] arr = {1, 2, 3, 4, 5};
-
     Permutation01 main = new Permutation01(arr, r);
     main.perm(0);
   }
-
 }
