@@ -1,9 +1,9 @@
-package org.sunj.algorithms.permutations;
+package org.sunj.algorithms.permutations.ex01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Permutation01 {
+public class Permutation {
 
   private int n; // nPr의 n
   private int r; // nPr의 r
@@ -11,7 +11,7 @@ public class Permutation01 {
   private int[] res;
 
   // 초기화
-  public Permutation01(int[] intArr, int r) {
+  public Permutation(int[] intArr, int r) {
     this.r = r; // nPr의 r
     this.n = intArr.length; // nPr의 n
     this.res = new int[r]; // 결과값 배열
@@ -27,6 +27,7 @@ public class Permutation01 {
   }
 
   public void perm(ArrayList<Integer> itemList, int depth) {
+
     // depth가 0부터 시작했을 경우 depth == r에서 리턴
     if (depth == r) {
       System.out.println(Arrays.toString(res));
@@ -40,19 +41,21 @@ public class Permutation01 {
     }
     
     /*
-         중복을 허용한 코드
-     for (int i = 0; i < n - depth; i++) {
+       중복을 허용한 코드
+    for (int i = 0; i < n - depth; i++) {
       res[depth] = itemList.remove(i); // 아이템 선택 + 리스트에서 제거
       perm(itemList, depth + 1); // 재귀호출
       itemList.add(i, res[depth]); // 제거된 아이템 복원
     }
-    */
+   */
   }
-
+  
   public static void main(String[] args) {
     int r = 3;
     int[] arr = {1, 2, 3, 4, 5};
-    Permutation01 main = new Permutation01(arr, r);
+
+    Permutation main = new Permutation(arr, r);
     main.perm(0);
   }
+
 }
