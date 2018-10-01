@@ -6,7 +6,7 @@ public class SetCovering {
 
   public static void main(String[] args) {
     Set<String> statesNeeded =
-        new HashSet(Arrays.asList("mt", "wa", "or", "id", "nv", "ut", "ca", "az"));
+        new HashSet<String>(Arrays.asList("mt", "wa", "or", "id", "nv", "ut", "ca", "az"));
     Map<String, Set<String>> stations = new LinkedHashMap<>();
 
     stations.put("kone", new HashSet<>(Arrays.asList("id", "nv", "ut")));
@@ -31,9 +31,11 @@ public class SetCovering {
         statesNeeded.removeIf(statesCovered::contains);
 
         if (bestStation != null) {
+          System.out.println(bestStation);
           finalStations.add(bestStation);
         }
       }
+      System.out.println(statesNeeded);
     }
     System.out.println(finalStations); // [ktwo, kone, kthree, kfive]
   }
