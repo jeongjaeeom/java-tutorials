@@ -1,9 +1,11 @@
 package org.sunj.java.streams;
 
-import java.time.LocalDate;
+import java.time.chrono.IsoChronology;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.junit.Test;
@@ -28,8 +30,7 @@ public class StreamExamples01 {
 
   @Test
   public void testListToMap() {
-    List<Person> persons =
-        Stream.of(new Person("Foo"), new Person("Bar")).collect(Collectors.toList());
+    List<Person> persons = Person.createRoster();
     Map<String, Person> personMap =
         persons.stream()
           .collect(Collectors.toMap(Person::getName, person -> person));
@@ -43,52 +44,16 @@ public class StreamExamples01 {
         .collect(Collectors.toMap(m -> ((Map<String, String>) m).get("name"), m -> m));
     System.out.println("map: " + map);
   }
-
-  static class Person {
-    String name;
-    LocalDate birthday;
-    Sex gender;
-    String emailAddress;
-
-    public Person(String name) {
-      this.name = name;
-    }
-
-    public String getName() {
-      return name;
-    }
-
-    public void setName(String name) {
-      this.name = name;
-    }
-
-    public LocalDate getBirthday() {
-      return birthday;
-    }
-
-    public void setBirthday(LocalDate birthday) {
-      this.birthday = birthday;
-    }
-
-    public Sex getGender() {
-      return gender;
-    }
-
-    public void setGender(Sex gender) {
-      this.gender = gender;
-    }
-
-    public String getEmailAddress() {
-      return emailAddress;
-    }
-
-    public void setEmailAddress(String emailAddress) {
-      this.emailAddress = emailAddress;
-    }
-
-    public enum Sex {
-      MALE, FEMALE
-    }
+  
+  @Test
+  public void testStreamUseMap() {
+    List<Person> persons = null;
+    System.out.println(persons);
+    List<Person> personsToUseMap = Optional.ofNullable(persons).orElse(Collections.emptyList()).stream().map(p -> {
+      return new Person("Test", IsoChronology.INSTANCE.date(1980, 6, 20), Person.Sex.MALE,
+          "fred@example.com");
+    }).collect(Collectors.toList());
+    System.out.println(personsToUseMap);
   }
-
+  
 }
