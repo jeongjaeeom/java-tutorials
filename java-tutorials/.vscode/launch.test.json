@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "java-tutorials",
+                "projectName": "java-tutorials",
+                "workingDirectory": "d:\\developer\\workspace\\learning\\java-tutorials",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "java-tutorials",
+                "projectName": "java-tutorials",
+                "workingDirectory": "d:\\developer\\workspace\\learning\\java-tutorials",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

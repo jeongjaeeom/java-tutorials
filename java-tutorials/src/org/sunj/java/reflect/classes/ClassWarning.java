@@ -1,4 +1,4 @@
-package org.sunj.java.reflect;
+package org.sunj.java.reflect.classes;
 /*
  * Copyright (c) 1995, 2008, Oracle and/or its affiliates. All rights reserved.
  *
@@ -25,23 +25,16 @@ package org.sunj.java.reflect;
  * WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-class Cls {
-  private Cls() {}
-}
+import java.lang.reflect.Method;
 
-
-public class ClassTrouble {
-  public static void main(String... args) {
+public class ClassWarning {
+  void m() {
     try {
-      Class<?> c = Class.forName("Cls");
-      c.newInstance(); // InstantiationException
+      Class c = ClassWarning.class;
+      Method m = c.getMethod("m"); // warning
 
-      // production code should handle these exceptions more gracefully
-    } catch (InstantiationException x) {
-      x.printStackTrace();
-    } catch (IllegalAccessException x) {
-      x.printStackTrace();
-    } catch (ClassNotFoundException x) {
+      // production code should handle this exception more gracefully
+    } catch (NoSuchMethodException x) {
       x.printStackTrace();
     }
   }

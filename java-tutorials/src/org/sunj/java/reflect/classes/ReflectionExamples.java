@@ -1,4 +1,4 @@
-package org.sunj.java.reflect;
+package org.sunj.java.reflect.classes;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
