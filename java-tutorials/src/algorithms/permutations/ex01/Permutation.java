@@ -1,4 +1,4 @@
-package org.sunj.algorithms.permutations.ex01;
+package algorithms.permutations.ex01;
 
 import java.util.ArrayList;
 import java.util.Arrays;

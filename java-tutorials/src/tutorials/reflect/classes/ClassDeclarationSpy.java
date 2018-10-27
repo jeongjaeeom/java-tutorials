@@ -1,4 +1,4 @@
-package org.sunj.java.reflect.classes;
+package tutorials.reflect.classes;
 /*
  * Copyright (c) 1995, 2008, Oracle and/or its affiliates. All rights reserved.
  *

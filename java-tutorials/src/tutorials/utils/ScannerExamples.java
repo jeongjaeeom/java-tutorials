@@ -1,4 +1,4 @@
-package org.sunj.java.utils;
+package tutorials.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;

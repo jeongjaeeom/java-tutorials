@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Q1110",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "steps.step04.Q1110",
+      "args": "",
+      "projectName": "baekjoon-algorithms"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Q1546",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "steps.step04.Q1546",
+      "args": "",
+      "projectName": "baekjoon-algorithms"
+    }
+  ]
+}

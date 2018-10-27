@@ -1,4 +1,4 @@
-package org.sunj.java.streams;
+package tutorials.streams;
 
 import java.time.chrono.IsoChronology;
 import java.util.Collections;

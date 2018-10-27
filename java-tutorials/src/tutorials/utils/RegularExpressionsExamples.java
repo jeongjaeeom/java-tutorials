@@ -1,4 +1,4 @@
-package org.sunj.java.utils;
+package tutorials.utils;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;

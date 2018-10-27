@@ -1,4 +1,4 @@
-package org.sunj.java.utils;
+package tutorials.utils;
 
 import static org.junit.Assert.assertEquals;
 import java.util.Arrays;

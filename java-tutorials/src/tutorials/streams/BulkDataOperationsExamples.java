@@ -1,4 +1,4 @@
-package org.sunj.java.streams;
+package tutorials.streams;
 /*
  * Copyright (c) 2013, Oracle and/or its affiliates. All rights reserved.
  *
@@ -31,7 +31,7 @@ package org.sunj.java.streams;
  */
 
 import java.util.List;
-import org.sunj.java.streams.Person;
+import tutorials.streams.Person;
 
 public class BulkDataOperationsExamples {
 

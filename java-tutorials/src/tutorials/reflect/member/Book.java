@@ -1,4 +1,4 @@
-package org.sunj.java.reflect.member;
+package tutorials.reflect.member;
 /*
  * Copyright (c) 1995, 2008, Oracle and/or its affiliates. All rights reserved.
  *

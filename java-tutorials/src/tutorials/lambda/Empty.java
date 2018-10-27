@@ -1,4 +1,4 @@
-package org.sunj.java.lambda;
+package tutorials.lambda;
 
 public class Empty {
 

@@ -1,4 +1,4 @@
-package org.sunj.java.streams;
+package tutorials.streams;
 
 /*
  * Copyright (c) 2013, Oracle and/or its affiliates. All rights reserved.
